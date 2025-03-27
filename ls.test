@@ -1,0 +1,157 @@
+execve("/usr/bin/ls", ["ls"], 0x7fff92167608 /* 83 vars */) = 0 <0.000911>
+brk(NULL)                               = 0x5f9d04498000 <0.000125>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x773cf17c3000 <0.000131>
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (没有那个文件或目录) <0.000071>
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000082>
+fstat(3, {st_mode=S_IFREG|0644, st_size=76715, ...}) = 0 <0.000034>
+mmap(NULL, 76715, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b0000 <0.000050>
+close(3)                                = 0 <0.000018>
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3 <0.000044>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000021>
+fstat(3, {st_mode=S_IFREG|0644, st_size=178648, ...}) = 0 <0.000022>
+mmap(NULL, 186008, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x773cf1782000 <0.000041>
+mmap(0x773cf1789000, 118784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x773cf1789000 <0.000049>
+mmap(0x773cf17a6000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x773cf17a6000 <0.000033>
+mmap(0x773cf17ac000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a000) = 0x773cf17ac000 <0.000036>
+mmap(0x773cf17ae000, 5784, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x773cf17ae000 <0.000027>
+close(3)                                = 0 <0.000017>
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000027>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\245\2\0\0\0\0\0"..., 832) = 832 <0.000020>
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.000018>
+fstat(3, {st_mode=S_IFREG|0755, st_size=2182752, ...}) = 0 <0.000022>
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.000018>
+mmap(NULL, 2227672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x773cf1400000 <0.000037>
+mmap(0x773cf1428000, 1662976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x773cf1428000 <0.000030>
+mmap(0x773cf15be000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x773cf15be000 <0.000021>
+mmap(0x773cf160d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20c000) = 0x773cf160d000 <0.000023>
+mmap(0x773cf1613000, 52696, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x773cf1613000 <0.000019>
+close(3)                                = 0 <0.000019>
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3 <0.000024>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000014>
+fstat(3, {st_mode=S_IFREG|0644, st_size=637712, ...}) = 0 <0.000015>
+mmap(NULL, 639760, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x773cf16e5000 <0.000020>
+mmap(0x773cf16e7000, 462848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x773cf16e7000 <0.000038>
+mmap(0x773cf1758000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x73000) = 0x773cf1758000 <0.000024>
+mmap(0x773cf1780000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9a000) = 0x773cf1780000 <0.000022>
+close(3)                                = 0 <0.000014>
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x773cf16e2000 <0.000016>
+arch_prctl(ARCH_SET_FS, 0x773cf16e2800) = 0 <0.000014>
+set_tid_address(0x773cf16e2ad0)         = 53062 <0.000012>
+set_robust_list(0x773cf16e2ae0, 24)     = 0 <0.000012>
+rseq(0x773cf16e3120, 0x20, 0, 0x53053053) = 0 <0.000012>
+mprotect(0x773cf160d000, 16384, PROT_READ) = 0 <0.000020>
+mprotect(0x773cf1780000, 4096, PROT_READ) = 0 <0.000018>
+mprotect(0x773cf17ac000, 4096, PROT_READ) = 0 <0.000018>
+mprotect(0x5f9cf368c000, 8192, PROT_READ) = 0 <0.000038>
+mprotect(0x773cf1803000, 8192, PROT_READ) = 0 <0.000036>
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000018>
+munmap(0x773cf17b0000, 76715)           = 0 <0.000044>
+statfs("/sys/fs/selinux", 0x7ffe8d031d70) = -1 ENOENT (没有那个文件或目录) <0.000070>
+statfs("/selinux", 0x7ffe8d031d70)      = -1 ENOENT (没有那个文件或目录) <0.000019>
+getrandom("\x57\xf2\x48\xd5\x15\x1f\xcc\x7b", 8, GRND_NONBLOCK) = 8 <0.000019>
+brk(NULL)                               = 0x5f9d04498000 <0.000017>
+brk(0x5f9d044b9000)                     = 0x5f9d044b9000 <0.000022>
+openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3 <0.000035>
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0 <0.000020>
+read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 407 <0.000049>
+read(3, "", 1024)                       = 0 <0.000018>
+close(3)                                = 0 <0.000022>
+access("/etc/selinux/config", F_OK)     = -1 ENOENT (没有那个文件或目录) <0.000039>
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3 <0.000028>
+fstat(3, {st_mode=S_IFREG|0644, st_size=2996, ...}) = 0 <0.000020>
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2996 <0.000020>
+read(3, "", 4096)                       = 0 <0.000018>
+close(3)                                = 0 <0.000019>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000028>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000022>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_IDENTIFICATION", O_RDONLY|O_CLOEXEC) = 3 <0.000026>
+fstat(3, {st_mode=S_IFREG|0644, st_size=306, ...}) = 0 <0.000021>
+mmap(NULL, 306, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17c2000 <0.000026>
+close(3)                                = 0 <0.000017>
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000026>
+fstat(3, {st_mode=S_IFREG|0644, st_size=27028, ...}) = 0 <0.000022>
+mmap(NULL, 27028, PROT_READ, MAP_SHARED, 3, 0) = 0x773cf17bb000 <0.000027>
+close(3)                                = 0 <0.000017>
+futex(0x773cf161272c, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000024>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000023>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000021>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_MEASUREMENT", O_RDONLY|O_CLOEXEC) = 3 <0.000029>
+fstat(3, {st_mode=S_IFREG|0644, st_size=23, ...}) = 0 <0.000022>
+mmap(NULL, 23, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17ba000 <0.000028>
+close(3)                                = 0 <0.000017>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000023>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000022>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_TELEPHONE", O_RDONLY|O_CLOEXEC) = 3 <0.000029>
+fstat(3, {st_mode=S_IFREG|0644, st_size=57, ...}) = 0 <0.000021>
+mmap(NULL, 57, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b9000 <0.000024>
+close(3)                                = 0 <0.000017>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000024>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000021>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_ADDRESS", O_RDONLY|O_CLOEXEC) = 3 <0.000026>
+fstat(3, {st_mode=S_IFREG|0644, st_size=162, ...}) = 0 <0.000043>
+mmap(NULL, 162, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b8000 <0.000045>
+close(3)                                = 0 <0.000019>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000024>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_NAME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000021>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_NAME", O_RDONLY|O_CLOEXEC) = 3 <0.000029>
+fstat(3, {st_mode=S_IFREG|0644, st_size=82, ...}) = 0 <0.000024>
+mmap(NULL, 82, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b7000 <0.000025>
+close(3)                                = 0 <0.000017>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000027>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_PAPER", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000025>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_PAPER", O_RDONLY|O_CLOEXEC) = 3 <0.000032>
+fstat(3, {st_mode=S_IFREG|0644, st_size=34, ...}) = 0 <0.000026>
+mmap(NULL, 34, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b6000 <0.000029>
+close(3)                                = 0 <0.000022>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000036>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000025>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3 <0.000031>
+fstat(3, {st_mode=S_IFDIR|0755, st_size=38, ...}) = 0 <0.000026>
+close(3)                                = 0 <0.000024>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_MESSAGES/SYS_LC_MESSAGES", O_RDONLY|O_CLOEXEC) = 3 <0.000035>
+fstat(3, {st_mode=S_IFREG|0644, st_size=82, ...}) = 0 <0.000026>
+mmap(NULL, 82, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b5000 <0.000028>
+close(3)                                = 0 <0.000022>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000029>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000025>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_MONETARY", O_RDONLY|O_CLOEXEC) = 3 <0.000032>
+fstat(3, {st_mode=S_IFREG|0644, st_size=290, ...}) = 0 <0.000026>
+mmap(NULL, 290, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b4000 <0.000040>
+close(3)                                = 0 <0.000022>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000046>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000025>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_COLLATE", O_RDONLY|O_CLOEXEC) = 3 <0.000031>
+fstat(3, {st_mode=S_IFREG|0644, st_size=2801698, ...}) = 0 <0.000026>
+mmap(NULL, 2801698, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf1153000 <0.000029>
+close(3)                                = 0 <0.000022>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000027>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_TIME", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000028>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_TIME", O_RDONLY|O_CLOEXEC) = 3 <0.000030>
+fstat(3, {st_mode=S_IFREG|0644, st_size=2868, ...}) = 0 <0.000026>
+mmap(NULL, 2868, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b3000 <0.000030>
+close(3)                                = 0 <0.000025>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000029>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000025>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_NUMERIC", O_RDONLY|O_CLOEXEC) = 3 <0.000033>
+fstat(3, {st_mode=S_IFREG|0644, st_size=54, ...}) = 0 <0.000026>
+mmap(NULL, 54, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf17b2000 <0.000049>
+close(3)                                = 0 <0.000022>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000034>
+openat(AT_FDCWD, "/usr/lib/locale/zh_CN.UTF-8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = -1 ENOENT (没有那个文件或目录) <0.000027>
+openat(AT_FDCWD, "/snap/code/187/usr/lib/locale/zh_CN.utf8/LC_CTYPE", O_RDONLY|O_CLOEXEC) = 3 <0.000034>
+fstat(3, {st_mode=S_IFREG|0644, st_size=341472, ...}) = 0 <0.000025>
+mmap(NULL, 341472, PROT_READ, MAP_PRIVATE, 3, 0) = 0x773cf168e000 <0.000036>
+close(3)                                = 0 <0.001899>
+ioctl(1, TCGETS, {c_iflag=BRKINT|ICRNL|IXON|IXANY|IMAXBEL|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD|HUPCL, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0 <0.000041>
+ioctl(1, TIOCGWINSZ, {ws_row=10, ws_col=119, ws_xpixel=0, ws_ypixel=0}) = 0 <0.000033>
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000044>
+fstat(3, {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0 <0.000038>
+getdents64(3, 0x5f9d044a8d00 /* 9 entries */, 32768) = 264 <0.000064>
+getdents64(3, 0x5f9d044a8d00 /* 0 entries */, 32768) = 0 <0.000035>
+close(3)                                = 0 <0.000041>
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}) = 0 <0.000038>
+write(1, "ls.test  sperf.cpp  sperf.out  s"..., 62) = 62 <0.000047>
+close(1)                                = 0 <0.000034>
+close(2)                                = 0 <0.000034>
+exit_group(0)                           = ?
++++ exited with 0 +++

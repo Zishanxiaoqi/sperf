@@ -1,14 +1,13 @@
 #include<bits/stdc++.h>
+#include<regex.h>
 
 using namespace std; 
 
 int main(){
-    int n=1;
-    while(1){
-        n++;
-        if(n==100000){
-            n=1;
-        }
-    }
-    return 0;
+    char  a[] = "hhh   <awda>\nawdawdaw <awdawda>\nawdawdaw    <awdawwad>";
+    regex_t regex;
+    regmatch_t match[1];
+    int ret = regcomp(&regex, "(\\w+).{0,1}<(.+)>" , REG_EXTENDED );
+     ret = regexec(&regex, a ,1,match,REG_EXTENDED);
+    cout<<string(a+match[0].rm_so,match[0].rm_eo-match[0].rm_so)<<endl;
 }
